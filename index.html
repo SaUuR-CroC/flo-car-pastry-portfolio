@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florian CARBON | Portfolio CAP Pâtisserie</title>
+  <meta name="description" content="Portfolio de Florian CARBON, apprenant en CAP pâtisserie, à la recherche d'une opportunité auprès d'un employeur américain.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+      <span class="brand-mark">FC</span>
+      <span class="brand-text">Florian CARBON</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="header-actions">
+      <nav class="main-nav" data-nav>
+        <a href="#creations">Savoir-faire</a>
+        <a href="#album">Album</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#services">Parcours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="language-switch" aria-label="Choisir la langue">
+        <button class="is-active" type="button" data-lang="fr">FR</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en">ENG</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil" aria-label="Accueil">
+      <img class="hero-image" src="assets/hero-patisserie.png" alt="Sélection élégante de pâtisseries artisanales sur un plan de travail." draggable="false">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">CAP pâtisserie en cours</p>
+        <h1>Florian CARBON</h1>
+        <p class="hero-copy">Apprenant motivé, sérieux et appliqué, je construis mes bases en pâtisserie avec l'objectif de rejoindre une équipe professionnelle, en priorité auprès d'un employeur américain.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#album">Voir l'album</a>
+          <a class="button button-secondary" href="#contact">Me contacter</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#creations" aria-label="Aller aux créations">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section intro reveal" aria-label="Présentation">
+      <div class="intro-copy">
+        <p class="eyebrow">Profil</p>
+        <h2>Un futur pâtissier en construction, avec l'envie de progresser.</h2>
+        <p>Ce portfolio rassemble mes réalisations de formation CAP, mes essais personnels et les gestes que je travaille au quotidien. Mon objectif est d'intégrer une équipe, idéalement aux États-Unis ou auprès d'un employeur américain, pour gagner en régularité, en rapidité et en exigence professionnelle.</p>
+      </div>
+      <figure class="profile-card">
+        <img src="assets/profil-patisserie.jpg" alt="Florian Carbon en tenue de pâtissier à l'École Ducasse." draggable="false">
+      </figure>
+    </section>
+
+    <section class="section" id="creations">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Compétences travaillées</p>
+        <h2>Les bases que je développe.</h2>
+      </div>
+
+      <div class="creation-grid">
+        <article class="creation-card reveal" data-category="entremets">
+          <div class="creation-visual visual-berry"></div>
+          <div class="creation-body">
+            <p>Entremets</p>
+            <h3>Montages et finitions</h3>
+            <span>Mousses, inserts, glaçages et décors travaillés en formation.</span>
+          </div>
+        </article>
+
+        <article class="creation-card reveal" data-category="tartes">
+          <div class="creation-visual visual-citrus"></div>
+          <div class="creation-body">
+            <p>Tartes</p>
+            <h3>Fonçage, cuisson, garniture</h3>
+            <span>Pâtes, crèmes, fruits et finitions nettes pour une lecture claire.</span>
+          </div>
+        </article>
+
+        <article class="creation-card reveal" data-category="reception">
+          <div class="creation-visual visual-choux"></div>
+          <div class="creation-body">
+            <p>Pâte à choux</p>
+            <h3>Choux, éclairs, religieuses</h3>
+            <span>Régularité, dressage, cuisson, garniture et glaçage.</span>
+          </div>
+        </article>
+
+        <article class="creation-card reveal" data-category="entremets">
+          <div class="creation-visual visual-chocolate"></div>
+          <div class="creation-body">
+            <p>Chocolat</p>
+            <h3>Goût, brillance, précision</h3>
+            <span>Travail des textures, décors simples et finitions propres.</span>
+          </div>
+        </article>
+
+        <article class="creation-card reveal" data-category="tartes">
+          <div class="creation-visual visual-pear"></div>
+          <div class="creation-body">
+            <p>Viennoiserie</p>
+            <h3>Feuilletage et régularité</h3>
+            <span>Gestes techniques, cuisson, dorure et présentation.</span>
+          </div>
+        </article>
+
+        <article class="creation-card reveal" data-category="reception">
+          <div class="creation-visual visual-mignardises"></div>
+          <div class="creation-body">
+            <p>Production</p>
+            <h3>Séries et organisation</h3>
+            <span>Alignement, répétition des gestes et soin apporté aux détails.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section album-section" id="album">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Album formation</p>
+        <h2>Réalisations en images</h2>
+        <p>Une sélection de mes réalisations actuelles, issues de la formation CAP, classée pour montrer ma progression et la diversité des gestes travaillés.</p>
+      </div>
+
+      <div class="album-grid" data-album-grid aria-label="Album photo des réalisations"></div>
+    </section>
+
+    <section class="section atelier" id="atelier">
+      <div class="atelier-copy reveal">
+        <p class="eyebrow">Méthode</p>
+        <h2>Apprendre les bons gestes, les répéter, les rendre plus réguliers.</h2>
+        <p>En formation, je travaille surtout la précision, l'organisation du poste, la propreté, le respect des étapes et la régularité. Chaque réalisation est une occasion de mieux comprendre les textures, les cuissons et les finitions attendues en laboratoire.</p>
+      </div>
+      <div class="timeline reveal">
+        <div>
+          <span>01</span>
+          <h3>Comprendre</h3>
+          <p>Lire une fiche technique, préparer le poste et anticiper les étapes.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Répéter</h3>
+          <p>Travailler les gestes jusqu'à gagner en précision et en régularité.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Progresser</h3>
+          <p>Observer, corriger, accepter les retours et améliorer le rendu final.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Parcours</p>
+        <h2>Formation CAP, stage et projet professionnel vers les États-Unis.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-item reveal">
+          <span>Formation</span>
+          <h3>CAP pâtisserie en cours</h3>
+          <p>Apprentissage des bases: pâtes, crèmes, entremets, pâte à choux, viennoiserie, hygiène et organisation.</p>
+        </article>
+        <article class="service-item reveal">
+          <span>Expérience</span>
+          <h3>Un stage en pâtisserie</h3>
+          <p>Première immersion professionnelle: rythme de laboratoire, observation des méthodes, aide à la production et respect des consignes.</p>
+        </article>
+        <article class="service-item reveal">
+          <span>Objectif</span>
+          <h3>Rejoindre un employeur américain</h3>
+          <p>Je recherche une structure où m'investir, progresser avec régularité et devenir rapidement utile à l'équipe, avec une attention particulière pour les opportunités aux États-Unis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Candidature</p>
+        <h2>Disponible pour échanger avec un employeur américain.</h2>
+        <p>Je suis en formation CAP pâtisserie et je souhaite rejoindre une équipe, en particulier aux États-Unis, qui valorise le sérieux, la curiosité et l'envie d'apprendre.</p>
+        <a href="mailto:florian.carbon50@gmail.com">florian.carbon50@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" data-lightbox hidden>
+    <button class="lightbox-close" type="button" aria-label="Fermer l'image" data-lightbox-close>×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Photo précédente" data-lightbox-prev>‹</button>
+    <figure>
+      <img src="" alt="" data-lightbox-image>
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Photo suivante" data-lightbox-next>›</button>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Florian CARBON. Portfolio pâtisserie.</p>
+    <a href="#accueil">Retour en haut</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

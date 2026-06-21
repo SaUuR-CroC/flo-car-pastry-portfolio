@@ -1,0 +1,14 @@
+# Keep private/high-resolution source photos out of the published repository.
+assets/Portfolio/
+
+# Local/private workspace files.
+.agents/
+
+# Temporary preview sheets generated during visual checks.
+assets/*preview*.jpg
+assets/*contact-sheet*.jpg
+assets/*order-check*.jpg
+
+# OS noise.
+Thumbs.db
+.DS_Store
