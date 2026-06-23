@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Florian CARBON | Portfolio CAP Pâtisserie</title>
-  <meta name="description" content="Portfolio de Florian CARBON, apprenant en CAP pâtisserie, à la recherche d'une opportunité auprès d'un employeur américain.">
+  <title>Florian CARBON | CAP Pâtisserie à l'École Ducasse</title>
+  <meta name="description" content="Portfolio de Florian CARBON, en CAP pâtisserie à l'École Ducasse – École Nationale Supérieure de Pâtisserie, à la recherche d'une opportunité professionnelle.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260623-readable-labels">
 </head>
 <body>
   <header class="site-header" data-header>
+    <span class="scroll-progress" aria-hidden="true" data-scroll-progress></span>
     <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
       <span class="brand-mark">FC</span>
       <span class="brand-text">Florian CARBON</span>
@@ -26,17 +27,31 @@
 
     <div class="header-actions">
       <nav class="main-nav" data-nav>
+        <a href="#profil">Profil</a>
         <a href="#creations">Savoir-faire</a>
         <a href="#album">Album</a>
-        <a href="#atelier">Atelier</a>
+        <a href="#atelier">Méthode</a>
         <a href="#services">Parcours</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="language-switch" aria-label="Choisir la langue">
-        <button class="is-active" type="button" data-lang="fr">FR</button>
-        <span aria-hidden="true">/</span>
-        <button type="button" data-lang="en">ENG</button>
+        <button class="is-active" type="button" data-lang="fr" aria-label="Français">
+          <svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false">
+            <rect width="10" height="20" fill="#002654"></rect>
+            <rect x="10" width="10" height="20" fill="#ffffff"></rect>
+            <rect x="20" width="10" height="20" fill="#ce1126"></rect>
+          </svg>
+        </button>
+        <button type="button" data-lang="en" aria-label="English">
+          <svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false">
+            <rect width="30" height="20" fill="#012169"></rect>
+            <path d="M0 0 30 20M30 0 0 20" stroke="#ffffff" stroke-width="4"></path>
+            <path d="M0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="2.4"></path>
+            <path d="M15 0v20M0 10h30" stroke="#ffffff" stroke-width="6.4"></path>
+            <path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3.8"></path>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -46,7 +61,7 @@
       <img class="hero-image" src="assets/hero-patisserie.png" alt="Sélection élégante de pâtisseries artisanales sur un plan de travail." draggable="false">
       <div class="hero-overlay"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">CAP pâtisserie en cours</p>
+        <p class="eyebrow">CAP pâtisserie · École Ducasse – ENSP</p>
         <h1>Florian CARBON</h1>
         <p class="hero-copy">Apprenant motivé, sérieux et appliqué, je construis mes bases en pâtisserie avec l'objectif de rejoindre une équipe professionnelle, en priorité auprès d'un employeur américain.</p>
         <div class="hero-actions">
@@ -59,14 +74,56 @@
       </a>
     </section>
 
-    <section class="section intro reveal" aria-label="Présentation">
+    <section class="section intro reveal" id="profil" aria-label="Présentation">
       <div class="intro-copy">
         <p class="eyebrow">Profil</p>
-        <h2>Un futur pâtissier en construction, avec l'envie de progresser.</h2>
-        <p>Ce portfolio rassemble mes réalisations de formation CAP, mes essais personnels et les gestes que je travaille au quotidien. Mon objectif est d'intégrer une équipe, idéalement aux États-Unis ou auprès d'un employeur américain, pour gagner en régularité, en rapidité et en exigence professionnelle.</p>
+        <section class="journey-note summary-block" aria-label="Résumé du parcours">
+          <p class="journey-kicker">Résumé de mon parcours</p>
+          <h2 class="summary-title">De la finance à la pâtisserie française</h2>
+          <p class="summary-text-1">
+            Mon parcours a d'abord pris racine dans la finance, avec un Master Grande École spécialisé en finance, une formation sélective comparable à un graduate degree en business ou finance aux États-Unis.
+          </p>
+          <p class="summary-text-2">
+            Cette formation m'a apporté une méthode de travail structurée, une grande rigueur d'analyse, une attention constante aux coûts, aux marges, à l'organisation et à la prise de décision.
+          </p>
+          <p class="summary-text-3">
+            Après avoir exploré le secteur financier, j'ai choisi de réorienter mon avenir professionnel vers une passion plus concrète, artisanale et profondément liée à la culture française : la pâtisserie.
+          </p>
+          <p class="summary-text-4">
+            Je prépare aujourd'hui mon CAP pâtisserie à l'École Ducasse, au sein de l'École Nationale Supérieure de Pâtisserie à Yssingeaux, une institution de référence reconnue internationalement pour l'excellence de son enseignement et la transmission du savoir-faire pâtissier français.
+          </p>
+          <p class="summary-text-5">
+            La pâtisserie me permet d'appliquer autrement les qualités acquises en finance : rigueur, organisation, précision et attention aux coûts. Je veux maintenant progresser dans ce métier avec sérieux et exigence.
+          </p>
+        </section>
       </div>
       <figure class="profile-card">
         <img src="assets/profil-patisserie.jpg" alt="Florian Carbon en tenue de pâtissier à l'École Ducasse." draggable="false">
+        <figcaption>Florian Carbon</figcaption>
+      </figure>
+    </section>
+
+    <section class="section intro school-intro reveal" aria-label="Formation à l'École Ducasse">
+      <div class="intro-copy">
+        <p class="eyebrow school-eyebrow">Formation à l'École Ducasse</p>
+        <section class="journey-note portfolio-purpose" aria-label="Objectif de mon portfolio">
+          <p class="journey-kicker">Objectif de mon portfolio</p>
+          <h2 class="purpose-title">Un futur pâtissier en construction, formé à l'exigence française.</h2>
+
+          <p class="purpose-text purpose-text-1">
+            Ce portfolio rassemble mes réalisations de CAP pâtisserie à l'École Ducasse – École Nationale Supérieure de Pâtisserie, mes essais personnels et les gestes techniques que je travaille au quotidien.
+          </p>
+          <p class="purpose-text purpose-text-2">
+            Mon objectif est d'intégrer une équipe, idéalement aux États-Unis ou auprès d'un employeur américain, afin de gagner en régularité, en rapidité et en exigence professionnelle.
+          </p>
+          <p class="purpose-text purpose-text-3">
+            Je souhaite continuer à apprendre au contact de professionnels expérimentés, contribuer avec sérieux au travail d'un laboratoire ou d'une brigade, et développer progressivement une maîtrise solide de la pâtisserie française.
+          </p>
+        </section>
+      </div>
+      <figure class="school-card">
+        <img src="assets/ecole-patisserie-yssingeaux.jpg" alt="École Nationale Supérieure de Pâtisserie à Yssingeaux." draggable="false">
+        <figcaption>École Nationale Supérieure de Pâtisserie · Yssingeaux</figcaption>
       </figure>
     </section>
 
@@ -137,10 +194,19 @@
       <div class="section-heading reveal">
         <p class="eyebrow">Album formation</p>
         <h2>Réalisations en images</h2>
-        <p>Une sélection de mes réalisations actuelles, issues de la formation CAP, classée pour montrer ma progression et la diversité des gestes travaillés.</p>
+        <p>Une sélection de mes réalisations issues du CAP pâtisserie à l'École Ducasse – ENSP, classée pour montrer ma progression et la diversité des gestes travaillés.</p>
       </div>
 
+      <nav class="album-shortcuts" aria-label="Navigation dans l'album" data-album-shortcuts>
+        <button class="album-shortcut album-jump-top" type="button" data-album-scroll="top" aria-label="Aller au début de l'album">⇈</button>
+        <button class="album-shortcut album-step-up" type="button" data-album-scroll="up" aria-label="Monter de 2 lignes">↑</button>
+        <button class="album-shortcut album-step-down" type="button" data-album-scroll="down" aria-label="Descendre de 2 lignes">↓</button>
+        <button class="album-shortcut album-jump-end" type="button" data-album-scroll="end" aria-label="Aller à la fin de l'album">⇊</button>
+      </nav>
+
       <div class="album-grid" data-album-grid aria-label="Album photo des réalisations"></div>
+
+      <div class="album-anchor" id="album-end" aria-hidden="true"></div>
     </section>
 
     <section class="section atelier" id="atelier">
@@ -171,13 +237,13 @@
     <section class="section services" id="services">
       <div class="section-heading reveal">
         <p class="eyebrow">Parcours</p>
-        <h2>Formation CAP, stage et projet professionnel vers les États-Unis.</h2>
+        <h2>CAP pâtisserie à l'École Ducasse, expérience et projet professionnel vers les États-Unis.</h2>
       </div>
       <div class="service-grid">
         <article class="service-item reveal">
           <span>Formation</span>
-          <h3>CAP pâtisserie en cours</h3>
-          <p>Apprentissage des bases: pâtes, crèmes, entremets, pâte à choux, viennoiserie, hygiène et organisation.</p>
+          <h3>CAP pâtisserie à l'École Ducasse – ENSP</h3>
+          <p>Une formation au sein d'une institution française de renommée internationale : pâtes, crèmes, entremets, pâte à choux, viennoiserie, hygiène et organisation.</p>
         </article>
         <article class="service-item reveal">
           <span>Expérience</span>
@@ -194,9 +260,9 @@
 
     <section class="section contact" id="contact">
       <div class="contact-copy reveal">
-        <p class="eyebrow">Candidature</p>
+        <p class="eyebrow">Contact</p>
         <h2>Disponible pour échanger avec un employeur américain.</h2>
-        <p>Je suis en formation CAP pâtisserie et je souhaite rejoindre une équipe, en particulier aux États-Unis, qui valorise le sérieux, la curiosité et l'envie d'apprendre.</p>
+        <p class="contact-text">Je prépare mon CAP pâtisserie à l'École Ducasse – ENSP et souhaite rejoindre une équipe, en particulier aux États-Unis, qui valorise le sérieux, la curiosité et l'envie d'apprendre.</p>
         <a href="mailto:florian.carbon50@gmail.com">florian.carbon50@gmail.com</a>
       </div>
     </section>
@@ -217,6 +283,6 @@
     <a href="#accueil">Retour en haut</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260623-ducasse-cap"></script>
 </body>
 </html>
