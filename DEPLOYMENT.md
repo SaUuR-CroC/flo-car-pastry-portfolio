@@ -1,31 +1,38 @@
-# Publication GitHub Pages
+# Mise à jour du portfolio sur GitHub
 
-Ce site est statique et peut être publié avec GitHub Pages.
+Le site est publié depuis la branche `main` du dépôt :
 
-Avant publication, ne pas ajouter le dossier `assets/Portfolio/` au dépôt: il contient les originaux haute qualité. Le site utilise uniquement `assets/Portfolio-web/`.
+`https://github.com/SaUuR-CroC/flo-car-pastry-portfolio.git`
 
-Commandes principales:
+## Publier toutes les modifications
 
-```bat
-git init
-git add index.html styles.css script.js .gitignore DEPLOYMENT.md assets\Portfolio-web assets\hero-patisserie.png assets\profil-patisserie.jpg
-git commit -m "Initial portfolio website"
-git branch -M main
-git remote add origin https://github.com/VOTRE-UTILISATEUR/VOTRE-DEPOT.git
-git push -u origin main
+Ouvrir PowerShell, puis exécuter :
+
+```powershell
+cd "C:\Users\carbo\OneDrive\Bureau\portfolio_patisserie"
+
+git add -A
+git commit -m "Mise à jour complète du portfolio"
+git pull --rebase origin main
+git push origin main
 ```
 
-Ensuite, dans GitHub:
+## Vérifier la publication
 
-1. Ouvrir le dépôt.
-2. Aller dans `Settings`.
-3. Aller dans `Pages`.
-4. Dans `Build and deployment`, choisir `Deploy from a branch`.
-5. Sélectionner `main` puis `/root`.
-6. Enregistrer.
+```powershell
+git status
+```
 
-L'adresse du site sera généralement:
+Le résultat attendu est :
 
 ```text
-https://VOTRE-UTILISATEUR.github.io/VOTRE-DEPOT/
+nothing to commit, working tree clean
 ```
+
+Si GitHub Pages est configuré sur la branche `main` et le dossier `/root`, le site sera automatiquement actualisé quelques minutes après le `git push`.
+
+## Photos originales
+
+Le dossier `assets/Portfolio/` contient les photos originales en haute définition. Il est exclu par `.gitignore` et ne doit pas être publié.
+
+Le site utilise uniquement les images optimisées du dossier `assets/Portfolio-web/`.
